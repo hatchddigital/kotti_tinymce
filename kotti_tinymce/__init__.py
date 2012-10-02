@@ -148,3 +148,4 @@ def includeme(config):
     edit_needed.add(kotti_tinymce)
     config.scan("kotti_tinymce")
     config.add_translation_dirs('kotti_tinymce:locale/')
+    config.add_static_view('kotti_tinycme_static', 'kotti_tinymce:static')
