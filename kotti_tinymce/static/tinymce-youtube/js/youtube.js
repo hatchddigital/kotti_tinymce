@@ -9,7 +9,7 @@ var YouTubeDialog = {
 	insert : function() {
         var youtube_id = document.forms[0].youtube_id.value
           , html = '<div class="video youtube-video"><iframe width="640" height="480" src="https://www.youtube.com/embed/' +
-                    youtube_id + '?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>';
+                    youtube_id + '?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><p></p>';
 		tinyMCEPopup.editor.execCommand('mceInsertContent', false, html);
 		tinyMCEPopup.close();
 	},
